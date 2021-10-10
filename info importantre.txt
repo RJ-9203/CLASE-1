@@ -1,0 +1,15 @@
+estilos, color, fondo, letra
+https://developer.mozilla.org/es/docs/Learn/CSS/Styling_text/Fundamentals
+
+contacto whatsaap
+https://api.whatsapp.com/send/?phone=+54935111115&text=Hola
+
+tips hmtl
+https://www.w3schools.com/html/
+
+se pone :11px para el tamaño, ejemplo style="font size: 17px"
+
+strong para poner en negrita
+
+https://www.w3schools.com/tags/default.asp
+todas las etiquetas html

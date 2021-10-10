@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .elemento{
+            border: 1px solid blue;
+        }
+        #h1 {
+            margin-left: 30px;
+            padding-left: 30px;
+            border: black solid;
+        }
+        #parrafo {
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        #calculadora {
+            border: 10px, solid black;
+            text-align: center;
+        }
+        .fila {
+            display: flex;
+            justify-content: center;
+        }
+        .item {
+            width: 80px;
+            height: 80px;
+            margin: 6px;
+            background-color: rgb(112, 206, 209);
+        }
+        .operacion {
+            width: 80px;
+            height: 80px;
+            margin: 6px;
+            background-color: coral;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="h1" class="elemento">Texto en H1</h1>
+    <p id="parrafo" class="elemento2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum id dicta fugit illum, labore, rerum rem natus ratione quibusdam ut molestias totam veniam architecto minus neque dolorem veritatis aliquid nobis.</p>
+    <img src="data:image/jpeg;base64,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"
+    <a ref>Hipervinculo</a>
+
+    <div id="calculadora">
+        <h2>Calculadora</h2>
+        <div id="fila1" class="fila">
+            <button class="item">1</button>
+            <button class="item">2</button>
+            <button class="item">3</button>
+            <button class="operacion">+</button>
+        </div>
+        <div id="fila2" class="fila">
+            <button class="item">4</button>
+            <button class="item">5</button>
+            <button class="item">6</button>
+            <button class="operacion">-</button>
+        </div>
+        <div id="fila3" class="fila">
+            <button class="item">7</button>
+            <button class="item">8</button>
+            <button class="item">9</button>
+            <button class="operacion">*</button>
+        </div>
+        <div id="fila4" class="fila">
+            <button class="item">*</button>
+            <button class="item">0</button>
+            <button class="item">#</button>
+            <button class="operacion">/</button>
+        </div>
+        
+
+    </div>
+</body>
+</html>
