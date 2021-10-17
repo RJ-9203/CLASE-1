@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<style>
+    .div_resultado{
+        display: none;
+    }
+</style>
+</head>
+<body onload="calculadora();">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 text-center border-top pt-3">
+                <button type="button" class="btn btn-primary btn-lg" id="calculadora">Calculator</button>
+            </div>
+            <div class="col-lg-2 text-center border-top pt-3">
+                <button type="button" class="btn btn-primary btn-lg btn-success position-relative" id="sumatoria">Summation</button>
+            </div>
+            <div class="col-lg-5 text center border-top pt-3">
+                <h1 class="tittle-card"><strong>CONTROL PANEL</strong></h1>
+                <h3>Please press any of the color buttons</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 text-center border-top pt-3">
+                <button type="button" class="btn btn-primary btn-lg btn-danger" id="upperlower">Upper & Lower</button>
+            </div>
+            <div class="col-lg-2 text-center border-top pt-3">
+                <button type="button" class="btn btn-primary btn-lg btn-warning" id="counter">Character Counter</button>
+            </div>
+        </div>
+    </div>
+<hr>
+    <div class="resultado">
+        <div class="row">
+            <div class="col-lg-12 border-top text-center pt-3">
+                <div class="div_resultado" id="div_calculadora">
+                    <div class="row">
+                        <div class="col-lg-12 border-top text-center pt-2" id="resultadocalculado">
+                            <p id="inputcalculadora"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 border-top text-center pt-2">
+                            <button type="text" id="uno" class="btn btn-dark">1</button>
+                            <button type="text" id="dos" class="btn btn-dark">2</button>
+                            <button type="text" id="tres" class="btn btn-dark">3</button>
+                            <button type="text" id="suma" class="btn btn-secondary">+</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 border-top text-center pt-2">
+                            <button type="text" id="cuatro" class="btn btn-dark">4</button>
+                            <button type="text" id="cinco" class="btn btn-dark">5</button>
+                            <button type="text" id="seis" class="btn btn-dark">6</button>
+                            <button type="text" id="resta" class="btn btn-secondary">-</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 border-top text-center pt-2">
+                            <button type="text" id="siete" class="btn btn-dark">7</button>
+                            <button type="text" id="ocho" class="btn btn-dark">8</button>
+                            <button type="text" id="nueve" class="btn btn-dark">9</button>
+                            <button type="text" id="multiplicacion" class="btn btn-secondary">x</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 border-top text-center pt-2">
+                            <button type="text" id="resetear" class="btn btn-secondary">C</button>
+                            <button type="text" id="cero" class="btn btn-dark">0</button>
+                            <button type="text" id="igual" class="btn btn-secondary">=</button>
+                            <button type="text" id="division" class="btn btn-secondary">/</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_resultado" id="div_contador">Contador
+                    <input id="inputcontador" type="text" placeholder="Enter a word/sentence">
+                    <button id="botoncontador">Count it!</button>
+                    <p id="resultadocontador">Your entry has these many characteres</p>
+                </div>
+                <div class="div_resultado" id="div_mayuminu">
+                    <input id="inputmayuminu" type="text" placeholder="Enter a word/sentence">
+                    <button id="botonmayu">Switch to Upper case</button>
+                    <button id="botonminu">Switch to Lower case</button>
+                    <p id="resultadoconversion">Your entry has been converted to: </p>
+                </div>
+                <div class="div_resultado" id="div_sumatoria">
+                    <input id="inputsumatoria" type="text" placeholder="Enter a number">
+                    <button id="botonsumatoria">Sumatoria</button>
+                    <p id="resultadosumatoria">The result is: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="proyecto4.js"></script>
+</body>
+</html>
